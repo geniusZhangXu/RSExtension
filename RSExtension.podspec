@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
   # 你制作私有库项目的远程地址
   s.source           = { :git => 'https://gitee.com/MrRisingSun/rsextesion-code.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '14.0'
+  # 兼容最低系统版本
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'RSExtension/Classes/**/*'
   

@@ -52,7 +52,7 @@ THE SOFTWARE.
 
 ## RSExtension
 
-Copyright (c) 2024 shopmoods <Shopmoods123>
+Copyright (c) 2024 RisingSun <13535471825@163.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
