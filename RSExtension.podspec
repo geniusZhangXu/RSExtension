@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSExtension'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RSExtension.'
+  # 版本设置
+  s.version          = '0.0.1'
+  s.summary          = '自定义各种类型的Extension文件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -20,15 +21,17 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-
-  s.homepage         = 'https://github.com/shopmoods/RSExtension'
+  # 你的主页地址 填个能访问的 不然可能检验的时候报错
+  s.homepage         = 'https://gitee.com/MrRisingSun'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'shopmoods' => 'Shopmoods123' }
-  s.source           = { :git => 'https://github.com/shopmoods/RSExtension.git', :tag => s.version.to_s }
+  # 作者
+  s.author           = { 'Mr.RisingSun' => '13535471825@163.com' }
+  # 你制作私有库项目的远程地址
+  s.source           = { :git => 'https://gitee.com/MrRisingSun/rsextesion-code.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '14.0'
 
   s.source_files = 'RSExtension/Classes/**/*'
   
@@ -39,4 +42,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  # 依赖的第三方的库
+  s.dependency 'MJRefresh'
+  s.dependency 'Kingfisher'
+  
 end
