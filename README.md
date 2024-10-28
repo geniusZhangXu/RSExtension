@@ -22,7 +22,7 @@ pod 'RSExtension'
 
 ## Author
 
-shopmoods, Shopmoods123
+Mr.RisingSun, 13535471825@163.com
 
 ## License
 
