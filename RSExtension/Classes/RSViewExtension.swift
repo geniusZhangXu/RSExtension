@@ -195,12 +195,26 @@ extension UIView{
         self.layer.mask = rsShapeLayer
     }
     
+    /// View转换成UIImage输出
+    /// - Returns: description
+    public func rsViewTransformToImage() -> UIImage? {
+        
+        let size = self.bounds.size
+        /// 第一个参数表示区域大小。
+        /// 第二个参数表示是否是非透明的。如果需要显示半透明效果，需要传false，否则传true。
+        /// 第三个参数就是屏幕密度了
+        UIGraphicsBeginImageContextWithOptions(size,false,UIScreen.main.scale)
+        self.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let rsImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return rsImage
+    }
+    
 }
 
 extension UIView{
     
     /// 以下是利用Runtime添加手势回调属性
-    
     /// View的点击事件行为
     @objc dynamic var rsViewTapAction:RSViewGestureAction? {
         
