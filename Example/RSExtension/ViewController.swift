@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  RSExtension
 //
-//  Created by shopmoods on 10/28/2024.
-//  Copyright (c) 2024 shopmoods. All rights reserved.
+//  Created by RisingSun on 10/28/2024.
+//  Copyright (c) 2024 RisingSun. All rights reserved.
 //
 
 import UIKit

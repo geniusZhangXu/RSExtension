@@ -1,6 +1,6 @@
 # RSExtension
 
-[![CI Status](https://img.shields.io/travis/shopmoods/RSExtension.svg?style=flat)](https://travis-ci.org/shopmoods/RSExtension)
+[![CI Status](https://img.shields.io/travis/RisingSun/RSExtension.svg?style=flat)](https://travis-ci.org/RisingSun/RSExtension)
 [![Version](https://img.shields.io/cocoapods/v/RSExtension.svg?style=flat)](https://cocoapods.org/pods/RSExtension)
 [![License](https://img.shields.io/cocoapods/l/RSExtension.svg?style=flat)](https://cocoapods.org/pods/RSExtension)
 [![Platform](https://img.shields.io/cocoapods/p/RSExtension.svg?style=flat)](https://cocoapods.org/pods/RSExtension)
