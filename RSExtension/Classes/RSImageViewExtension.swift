@@ -67,7 +67,7 @@ extension UIImage{
     /// - Returns: description
     private func rsCompressImage(rsMaxSize: Int) -> Data {
         
-        let tempMaxLength: Int = maxLength
+        let tempMaxLength: Int = rsMaxSize
         var compression: CGFloat = 1
         
         guard var data = self.jpegData(compressionQuality: compression) else {

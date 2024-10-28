@@ -22,14 +22,14 @@ extension UICollectionView {
     /// - Parameter viewType: viewType description
     public func rsRegistWithHeaderView(_ reusableViewType:UICollectionReusableView.Type){
         
-        self.register(reusableViewType, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: UIView.rlViewIdentifier(reusableViewType))
+        self.register(reusableViewType, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: UIView.rlViewIdentifier(reusableViewType))
     }
     
     /// UICollectionView注册FooterView
     /// - Parameter viewType: viewType description
     public func rsRegistWithFooterView(_ reusableViewType:UICollectionReusableView.Type){
         
-        self.register(reusableViewType, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: UIView.rlViewIdentifier(reusableViewType))
+        self.register(reusableViewType, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: UIView.rlViewIdentifier(reusableViewType))
     }
     
     /// UICollectionView-Dequeue-Cell
@@ -49,7 +49,7 @@ extension UICollectionView {
     /// - Returns: description
     public func rsDequeueWithHeaderView<T:UICollectionReusableView>(reuseIdentifier cellType: T.Type, for indexPath: IndexPath) -> T{
         
-        return dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: UIView.rlViewIdentifier(cellType), for: indexPath) as! T
+        return dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: UIView.rlViewIdentifier(cellType), for: indexPath) as! T
     }
     
     /// UICollectionView-Dequeue-FotterView
@@ -59,6 +59,6 @@ extension UICollectionView {
     /// - Returns: description
     public func rsDequeueWithFooterView<T:UICollectionReusableView>(reuseIdentifier cellType: T.Type, for indexPath: IndexPath) -> T{
         
-        return dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: UIView.rlViewIdentifier(cellType), for: indexPath) as! T
+        return dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: UIView.rlViewIdentifier(cellType), for: indexPath) as! T
     }
 }
