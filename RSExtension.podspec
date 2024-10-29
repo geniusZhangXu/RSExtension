@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   # 版本设置
   s.version          = '0.0.1'
   s.summary          = '自定义各种类型的Extension文件'
-
+  # 兼容的Swift版本
+  s.swift_versions   = '5.0'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -28,7 +29,7 @@ TODO: Add long description of the pod here.
   # 作者
   s.author           = { 'Mr.RisingSun' => '13535471825@163.com' }
   # 你制作私有库项目的远程地址
-  s.source           = { :git => 'https://gitee.com/MrRisingSun/rsextesion-code.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/geniusZhangXu/RSExtension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   # 兼容最低系统版本
   s.ios.deployment_target = '13.0'
