@@ -18,7 +18,7 @@ PODS:
     - iOSSnapshotTestCase (~> 8.0)
     - Nimble
   - Quick (2.2.1)
-  - RSExtension (0.0.1):
+  - RSExtension (0.0.2):
     - Kingfisher
     - MJRefresh
 
@@ -51,8 +51,8 @@ SPEC CHECKSUMS:
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Nimble-Snapshots: ef281b908c604f78c8313587e25ea92c8ab513d7
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
-  RSExtension: 58c619582f9a190d6dabc561d0f6aadb8e1217de
+  RSExtension: 1a7d21b0d602c342e4f0a664d702a73d1f97e5b3
 
-PODFILE CHECKSUM: 76abf462183de7384db3a273523ca3969125841a
+PODFILE CHECKSUM: d7f656058cfe32920054b4c50e8023c5a3d69550
 
 COCOAPODS: 1.15.2

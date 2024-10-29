@@ -114,7 +114,7 @@ extension UIImage{
     /// 裁剪区域内的图片
     /// - Parameter rsRect: rsRect description
     /// - Returns: description
-    func rsClipImageWithRect(_ rsRect:CGRect) -> UIImage? {
+    public func rsClipImageWithRect(_ rsRect:CGRect) -> UIImage? {
         
         UIGraphicsBeginImageContextWithOptions(rsRect.size,false,UIScreen.main.scale)
         self.draw(in: rsRect)
@@ -125,7 +125,7 @@ extension UIImage{
     
     /// Base 64 encoded PNG data of the image.
     /// - Returns: Base 64 encoded PNG data of the image as a String.
-    func rsPngBase64String() -> String? {
+    public func rsPngBase64String() -> String? {
         
         return self.pngData()?.base64EncodedString()
     }
@@ -133,12 +133,10 @@ extension UIImage{
     /// Base 64 encoded JPEG data of the image.
     /// - Parameter: compressionQuality: The quality of the resulting JPEG image, expressed as a value from 0.0 to 1.0. The value 0.0 represents the maximum compression (or lowest quality) while the value 1.0 represents the least compression (or best quality).
     /// - Returns: Base 64 encoded JPEG data of the image as a String.
-    func rsJpegBase64String(compressionQuality: CGFloat) -> String? {
+    public func rsJpegBase64String(compressionQuality: CGFloat) -> String? {
         
         return self.jpegData(compressionQuality: compressionQuality)?.base64EncodedString()
     }
-    
-    
 }
 
 /// UICollectionView-Extension - 设置图片的地址
@@ -148,7 +146,7 @@ extension UIImageView {
     /// - Parameters:
     ///   - rsImageUrlString: rsImageUrlString description
     ///   - rsPlaceholderImage: rsPlaceholderImage description
-    public func rsSetImageWithUrl(_ rsImageUrlString: String?,_ rsPlaceholderImage:String? = "", options: KingfisherOptionsInfo? = nil, progressBlock: DownloadProgressBlock? = nil,completionHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)? = nil) {
+    public func rsSetImageWithUrl(_ rsImageUrlString: String?,_ rsPlaceholderImage:String? = "") {
         
         ///
         guard let urlString = rsImageUrlString else {
@@ -157,7 +155,7 @@ extension UIImageView {
         }
         /// URL图片地址不能为空
         if !urlString.isEmpty {
-            self.imageViewSetImage(with: URL(string: urlString),placeholder:UIImage(named: rsPlaceholderImage!),options: options,progressBlock: progressBlock,completionHandler: completionHandler)
+            self.imageViewSetImage(with: URL(string: urlString),placeholder:UIImage(named: rsPlaceholderImage!))
         }else{
             self.image = UIImage(named: rsPlaceholderImage!)
         }

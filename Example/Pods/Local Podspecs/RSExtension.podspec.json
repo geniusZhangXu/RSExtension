@@ -1,6 +1,6 @@
 {
   "name": "RSExtension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "自定义各种类型的Extension文件",
   "swift_versions": "5.0",
   "description": "TODO: Add long description of the pod here.",
@@ -13,8 +13,8 @@
     "Mr.RisingSun": "13535471825@163.com"
   },
   "source": {
-    "git": "https://gitee.com/MrRisingSun/rsextesion-code.git",
-    "tag": "0.0.1"
+    "git": "https://github.com/geniusZhangXu/RSExtension.git",
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "13.0"
