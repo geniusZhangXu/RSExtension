@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
   # 你的主页地址 填个能访问的 不然可能检验的时候报错
-  s.homepage         = 'https://gitee.com/MrRisingSun'
+  s.homepage         = 'https://github.com/geniusZhangXu/RSExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   # 作者

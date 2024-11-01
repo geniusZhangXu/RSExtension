@@ -4,7 +4,7 @@
   "summary": "自定义各种类型的Extension文件",
   "swift_versions": "5.0",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://gitee.com/MrRisingSun",
+  "homepage": "https://github.com/geniusZhangXu/RSExtension",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
