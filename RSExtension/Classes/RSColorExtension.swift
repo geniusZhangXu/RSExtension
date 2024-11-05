@@ -37,8 +37,6 @@ extension UIColor {
         return UIColor(rsHexValue: "FFFFFF",rsAlpha:0.5)
     }
     
-    
-    
 }
 
 extension UIColor {
@@ -47,7 +45,7 @@ extension UIColor {
     /// - Parameters:
     ///   - rsHexValue: HEX值
     ///   - rsAlpha: 颜色透明度
-    convenience init(rsHexValue: String, rsAlpha:CGFloat = 1.0) {
+    public convenience init(rsHexValue: String, rsAlpha:CGFloat = 1.0) {
         
         var rValue: UInt64 = 0x0
         var gValue: UInt64 = 0x0
