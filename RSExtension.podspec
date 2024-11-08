@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RSExtension'
   # 版本设置
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '自定义各种类型的Extension文件'
   # 兼容的Swift版本
   s.swift_versions   = '5.0'
@@ -44,7 +44,13 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   # 依赖的第三方的库
+  # HUD
+  s.dependency 'PKHUD'
   s.dependency 'MJRefresh'
   s.dependency 'Kingfisher'
+  # 展示Toast
+  s.dependency 'Toast-Swift'
+  # 进度HUD
+  s.dependency 'ProgressHUD'
   
 end

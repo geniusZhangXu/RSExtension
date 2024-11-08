@@ -1,6 +1,6 @@
 {
   "name": "RSExtension",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "summary": "自定义各种类型的Extension文件",
   "swift_versions": "5.0",
   "description": "TODO: Add long description of the pod here.",
@@ -14,17 +14,26 @@
   },
   "source": {
     "git": "https://github.com/geniusZhangXu/RSExtension.git",
-    "tag": "0.0.2"
+    "tag": "0.0.4"
   },
   "platforms": {
     "ios": "13.0"
   },
   "source_files": "RSExtension/Classes/**/*",
   "dependencies": {
+    "PKHUD": [
+
+    ],
     "MJRefresh": [
 
     ],
     "Kingfisher": [
+
+    ],
+    "Toast-Swift": [
+
+    ],
+    "ProgressHUD": [
 
     ]
   },

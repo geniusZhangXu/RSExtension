@@ -11,12 +11,25 @@ import Foundation
 /// Data-Extension
 extension Data{
     
+    /// Data的大小
+    public func rsDataSize() -> String {
+        
+        let rsSizeCount = self.count
+        let rsDataKbSize = rsSizeCount / 1024
+        if rsDataKbSize < 1024 {
+            return "\(rsDataKbSize)" + "KB"
+        }else{
+            let rsDataMbSize = rsDataKbSize / 1024
+            return "\(rsDataMbSize)" + "MB"
+        }
+    }
+    
     /// Data转Image输出
     /// - Returns: description
     public func rsDataToImage() -> UIImage? {
         
-        if let image = UIImage(data: self, scale: 1) {
-            return image
+        if let rsImage = UIImage(data: self, scale: 1) {
+            return rsImage
         } else {
             return nil
         }
