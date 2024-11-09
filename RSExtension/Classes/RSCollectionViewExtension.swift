@@ -61,4 +61,5 @@ extension UICollectionView {
         
         return dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: UIView.rlViewIdentifier(cellType), for: indexPath) as! T
     }
+    
 }

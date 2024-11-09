@@ -15,11 +15,6 @@ extension Bundle {
         return infoDictionary?["CFBundleName"] as! String
     }
     
-    /// 项目展示的名称
-    public var rsBundleDisplayName : String {
-        return infoDictionary?["CFBundleDisplayName"] as! String
-    }
-
     /// 项目的内部Build版本信息
     public var rsBundleBuildVersion : String {
         return infoDictionary?["CFBundleVersion"] as! String
@@ -28,6 +23,11 @@ extension Bundle {
     /// 项目的BundleIdentifier
     public var rsBundleIdentifier : String {
         return infoDictionary?["CFBundleIdentifier"] as! String
+    }
+    
+    /// 项目展示的名称
+    public var rsBundleDisplayName : String {
+        return infoDictionary?["CFBundleDisplayName"] as! String
     }
     
     /// 外部展示的版本信息

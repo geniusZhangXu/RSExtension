@@ -62,10 +62,26 @@ extension UIViewController {
     }
     
     /// --------------------------------------------------------------------------------------------------------
-    ///
-    ///
+    /// 
+    /// - Parameters:
+    ///   - rsTitle: rsTitle 顶部提示Banner标题
+    ///   - rsMessage: 顶部提示Banner内容
+    ///   - rsDelay: 顶部提示Banner展示时长-默认2秒
     public func rsShowBannerHUD(_ rsTitle:String, rsMessage:String,rsDelay:TimeInterval){
         
+        /// 展示Banner提示
+        ProgressHUD.banner(rsTitle, rsMessage, delay: rsDelay)
+    }
+    
+    /// 这里只扩展了colorBanner，具体到字体颜色，Font等属性，也可以自行设计封装
+    /// - Parameters:
+    ///   - rsTitle: rsTitle description
+    ///   - rsMessage: rsMessage description
+    ///   - rsDelay: rsDelay description
+    ///   - rsBannerBgColor: rsBannerBgColor description
+    public func rsShowBannerHUD(_ rsTitle:String, rsMessage:String,rsDelay:TimeInterval,rsBannerBgColor:UIColor){
+        
+        ProgressHUD.colorBanner = rsBannerBgColor
         /// 展示Banner提示
         ProgressHUD.banner(rsTitle, rsMessage, delay: rsDelay)
     }
@@ -74,6 +90,30 @@ extension UIViewController {
     public func rsHiddenBannerHUD(){
         
         ProgressHUD.bannerHide()
+    }
+    
+    /// 展示加载动画
+    /// - Parameters:
+    ///   - rsTitle: rsTitle description
+    ///   - rsAnimationType: rsAnimationType description
+    public func rsShowAnimateHUD(_ rsTitle:String, rsAnimationType:AnimationType){
+        
+        ProgressHUD.animate(rsTitle,rsAnimationType)
+    }
+    
+    /// 展示进度动画
+    /// - Parameters:
+    ///   - rsTitle: rsTitle description
+    ///   - rsValue: rsValue Progress的值
+    public func rsShowProgressHUD(_ rsTitle:String, rsValue:CGFloat){
+        
+        ProgressHUD.progress(rsTitle, rsValue)
+    }
+    
+    /// Dismiss-ProgressHUD
+    public func rsDismissHUD(){
+        
+        ProgressHUD.dismiss()
     }
     
     

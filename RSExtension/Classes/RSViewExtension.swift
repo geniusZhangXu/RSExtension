@@ -16,12 +16,18 @@ public typealias RSViewGestureAction = (UIGestureRecognizer)->()
 ///  自定义手势类型
 public enum RSGestureRecognizer {
     
-    case rs_panGesture      /// 拖拽手势
-    case rs_tapGesture      /// 点击手势
-    case rs_longGesture     /// 长按手势
-    case rs_swipeGesture    /// 轻扫手势
-    case rs_pinchGesture    /// 捏合缩放
-    case rs_roationGesture  /// 旋转手势
+    /// 拖拽手势
+    case rsPanGesture
+    /// 点击手势
+    case rsTapGesture
+    /// 长按手势
+    case rsLongGesture
+    /// 轻扫手势
+    case rsSwipeGesture
+    /// 捏合缩放
+    case rsPinchGesture
+    /// 旋转手势
+    case rsRoationGesture
 }
 
 /// 自定义手势的Key
@@ -362,34 +368,34 @@ extension UIView{
         self.isUserInteractionEnabled = true
         switch rsGesture {
             /// 点击事件
-            case .rs_tapGesture:
+            case .rsTapGesture:
             let rsTapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapAction(gesture:)))
             rsTapGesture.numberOfTapsRequired = 1
             rsTapGesture.numberOfTouchesRequired = 1
             self.addGestureRecognizer(rsTapGesture)
             self.rsViewTapAction = rsResponse
             /// 长按事件
-            case .rs_longGesture:
+            case .rsLongGesture:
             let rsLongPress = UILongPressGestureRecognizer(target: self, action: #selector(viewLongAction(gesture:)))
             self.addGestureRecognizer(rsLongPress)
             self.rsViewLongAction = rsResponse
             /// 拖拽事件
-            case .rs_panGesture:
+            case .rsPanGesture:
             let rsPanGesture = UIPanGestureRecognizer(target: self, action: #selector(viewPanAction(gesture:)))
             self.addGestureRecognizer(rsPanGesture)
             self.rsViewPanAction = rsResponse
             /// 旋转事件
-            case .rs_roationGesture:
+            case .rsRoationGesture:
             let rsRoation = UIRotationGestureRecognizer(target: self, action: #selector(viewRoationAction(gesture:)))
             self.addGestureRecognizer(rsRoation)
             self.rsViewRoationAction = rsResponse
             /// 轻扫事件
-            case .rs_swipeGesture:
+            case .rsSwipeGesture:
             let rsSwipe = UISwipeGestureRecognizer(target: self, action: #selector(viewSwipeAction(gesture:)))
             self.addGestureRecognizer(rsSwipe)
             self.rsViewSwipeAction = rsResponse
             /// 捏合事件
-            case .rs_pinchGesture:
+            case .rsPinchGesture:
             let rsPinch = UIPinchGestureRecognizer(target: self, action: #selector(viewPinchAction(gesture:)))
             self.addGestureRecognizer(rsPinch)
             self.rsViewPinchAction = rsResponse
