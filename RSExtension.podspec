@@ -36,6 +36,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'RSExtension/Classes/**/*'
   
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'}
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+    
   # s.resource_bundles = {
   #   'RSExtension' => ['RSExtension/Assets/*.png']
   # }
