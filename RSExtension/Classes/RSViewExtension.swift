@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PKHUD
+//import PKHUD
 import Foundation
 import Toast_Swift
 
@@ -407,6 +407,7 @@ extension UIView{
 /// UIView-Extension
 extension UIView {
     
+    /*
     /// --------------------------------------------------------------------------------------------------------
     /// 展示PKHUD
     /// - Parameter rsHudContentType: rsHudContentType description
@@ -452,7 +453,7 @@ extension UIView {
     public func rsHiddenPKHUD(){
         
         HUD.hide()
-    }
+    }*/
     
     /// --------------------------------------------------------------------------------------------------------
     /// 展示Show-Toast内容

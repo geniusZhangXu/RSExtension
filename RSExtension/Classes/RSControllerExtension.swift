@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PKHUD
+//import PKHUD
 import Foundation
 import Toast_Swift
 import ProgressHUD
@@ -14,6 +14,7 @@ import ProgressHUD
 /// UIViewController-Extension
 extension UIViewController {
     
+    /*
     /// --------------------------------------------------------------------------------------------------------
     /// 展示PKHUD
     /// - Parameter rsHudContentType: rsHudContentType description
@@ -59,7 +60,7 @@ extension UIViewController {
     public func rsHiddenPKHUD(){
         
         HUD.hide()
-    }
+    }*/
     
     /// --------------------------------------------------------------------------------------------------------
     /// 

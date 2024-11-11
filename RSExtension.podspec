@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RSExtension'
   # 版本设置
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = '自定义各种类型的Extension文件'
   # 兼容的Swift版本
   s.swift_versions   = '5.0'
@@ -35,10 +35,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'RSExtension/Classes/**/*'
-  
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'}
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
-    
   # s.resource_bundles = {
   #   'RSExtension' => ['RSExtension/Assets/*.png']
   # }
@@ -48,7 +44,6 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   # 依赖的第三方的库
   # HUD
-  s.dependency 'PKHUD'
   s.dependency 'MJRefresh'
   s.dependency 'Kingfisher'
   # 展示Toast
