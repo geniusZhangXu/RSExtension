@@ -60,6 +60,15 @@ extension UIDevice {
        return rliPadDevice
     }
 
+    /// 原始没有刘海的设备
+    /// - Returns: description
+    public class func rsDeviceMatchedOriginal() -> Bool{
+        if self.rsDeviceSafeAreaBottomInsets() == 0.0 {
+            return true
+        }
+       return false
+    }
+    
     /// 获取设备底部安全区域Insets-Bottom
     /// - Returns: description
     public class func rsDeviceSafeAreaBottomInsets() -> CGFloat {

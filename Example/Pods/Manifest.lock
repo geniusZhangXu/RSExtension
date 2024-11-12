@@ -2,7 +2,7 @@ PODS:
   - Kingfisher (6.3.1)
   - MJRefresh (3.7.6)
   - ProgressHUD (14.1.1)
-  - RSExtension (0.0.5):
+  - RSExtension (0.0.7):
     - Kingfisher
     - MJRefresh
     - ProgressHUD
@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
   ProgressHUD: abb9136ae23c85204236828562cb9a8ec98efb44
-  RSExtension: a6749bd40dc54370be126eef8da416e13c15c785
+  RSExtension: a037986e08724c2c65cded8d33278b2270dcef27
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
 PODFILE CHECKSUM: e30d2322dca224436c970aedf998896011ff6ce7
