@@ -35,7 +35,21 @@ extension UIDevice {
     /// 获取设备设置的语言码
     /// - Returns: description
     public class func rsLanguageCode() -> String{
+        
+        /// 返回首选的语言 Eg:"zh-Hans-HK"
+        let preferredLanguage = Locale.preferredLanguages.first ?? ""
+        return preferredLanguage
+    }
     
+    /// 获取设备和项目综合的语言码
+    /// - Returns: description
+    public class func rsProjectLanguageCode() -> String{
+    
+        /*
+         从macOS 10.13, iOS 11开始，Locale.current.languageCode返回的实际上是Bundle.main.preferredLocalizations.first。这是因为苹果认为这样的用户体验最好。
+         苹果举例说，如果一个用户对于语言的偏好顺序是["zh-CN", "de-CN", "en-CN" ]，而某个应用仅支持德语和英语，那么Locale.current.languageCode返回的就是de_CN。
+         */
+        /// NOTE: 该方法在本地Locations里面没有添加中文的时候，任凭切换系统语言，也是获取不到中文的，这里获取的语言和项目本身是有关系的
         if #available(iOS 16, *) {
             return Locale.current.language.languageCode?.identifier ?? ""
         } else {
